@@ -1,6 +1,6 @@
 ﻿// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
-void RandomizeArray(int[] array)
+void FillArray(int[] array)
 {
     Random rnd = new Random();
     for(int index = 0; index < array.Length; index++)
@@ -16,5 +16,5 @@ void PrintArray(int[] arr)
 }
 
 int[] newArray = new int[8];
-RandomizeArray(newArray);
+FillArray(newArray);
 PrintArray(newArray);
