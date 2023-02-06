@@ -27,8 +27,8 @@ int GetSum(int number)
     for(int i = 0; i < numberStr.Length; i++)
     {
     char dig = numberStr[i];
-    int digit = Convert.ToInt32(dig);
-    Console.Write($"{dig}, ");
+    int digit = Convert.ToInt32(dig) - 48;
+    Console.Write($"{dig}, {digit}, ");
     sum += digit;
     }
 return sum;
